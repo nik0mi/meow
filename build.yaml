@@ -1,0 +1,56 @@
+# This file generates the GitHub Actions matrix.
+# For simple board + shield combinations, add them to the top level board and
+# shield arrays, for more control, add individual board + shield combinations
+# to the `include` property. You can also use the `cmake-args` property to
+# pass flags to the build command, `snippet` to add a Zephyr snippet, and
+# `artifact-name` to assign a name to distinguish build outputs from each other:
+#
+# board: [ "nice_nano_v2" ]
+# shield: [ "corne_left", "corne_right" ]
+# include:
+#   - board: bdn9_rev2
+#   - board: nice_nano_v2
+#     shield: reviung41
+#   - board: nice_nano_v2
+#     shield: corne_left
+#     snippet: studio-rpc-usb-uart
+#     cmake-args: -DCONFIG_ZMK_STUDIO=y
+#     artifact-name: corne_left_with_studio
+#
+---
+include:
+
+  - board: nice_nano_v2
+    shield: meow_left
+
+## To build with ZMK Studio support, uncomment the following block
+## by removing the leading '#' from each line.
+
+#  - board: nice_nano_v2
+#    shield: meow_left
+#    snippet: studio-rpc-usb-uart
+#    cmake-args: -DCONFIG_ZMK_STUDIO=y
+#    artifact-name: meow_left_with_studio
+
+## See ZMK documentation on how to build and flash the firmware for dongle mode.
+## The "board" for the dongle can be anything ZMK supports.
+
+#  - board: nice_nano_v2
+#    shield: meow_dongle
+
+#  - board: nice_nano_v2
+#    shield: meow_left
+#    snippet: meow-left-as-peripheral
+#    artifact-name: meow_left_as_peripheral
+
+#  - board: nice_nano_v2
+#    shield: meow_dongle
+#    snippet: studio-rpc-usb-uart
+#    cmake-args: -DCONFIG_ZMK_STUDIO=y
+#    artifact-name: meow_dongle_with_studio
+
+  - board: nice_nano_v2
+    shield: meow_right
+
+  - board: nice_nano_v2
+    shield: settings_reset

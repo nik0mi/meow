@@ -1,0 +1,27 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    physical_layout_meow: physical_layout_meow {
+        compatible = "zmk,physical-layout";
+        display-name = "meow";
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0  105       0     0   105>
+            , <&key_physical_attrs 100 100  100   25       0   100    25>
+            , <&key_physical_attrs 100 100  200    0       0   200     0>
+            , <&key_physical_attrs 100 100  300   25       0   300    25>
+            , <&key_physical_attrs 100 100  400   45       0   400    45>
+            , <&key_physical_attrs 100 100    0  205       0     0   205>
+            , <&key_physical_attrs 100 100  100  125       0   100   125>
+            , <&key_physical_attrs 100 100  200  100       0   200   100>
+            , <&key_physical_attrs 100 100  300  125       0   300   125>
+            , <&key_physical_attrs 100 100  400  145       0   400   145>
+            , <&key_physical_attrs 100 100    0  305       0     0   305>
+            , <&key_physical_attrs 100 100  100  225       0   100   225>
+            , <&key_physical_attrs 100 100  200  200       0   200   200>
+            , <&key_physical_attrs 100 100  300  225       0   300   225>
+            , <&key_physical_attrs 100 100  400  245       0   400   245>
+            , <&key_physical_attrs 100 100  400  358    2000   450   408>
+            , <&key_physical_attrs 100 100  494  392    2000   544   442>
+            ;
+    };
+};

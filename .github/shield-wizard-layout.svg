@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 427">
+<style>
+  .bg { fill: #fafafa; }
+  .key-body { fill: #ffffff; }
+  .key-shadow { fill: rgba(0,0,0,0.04); }
+  .key-label { fill: #525252; font-weight: 600; }
+  .footer { fill: #a3a3a3; }
+  @media (prefers-color-scheme: dark) {
+    .bg { fill: #171717; }
+    .key-body { fill: #2a2a2a; }
+    .key-shadow { fill: rgba(0,0,0,0.15); }
+    .key-label { fill: #d4d4d4; }
+    .footer { fill: #525252; }
+  }
+</style>
+<rect class="bg" width="470" height="427"/>
+<g transform="translate(22,95.5)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">0</text>
+</g>
+<g transform="translate(92,39.5)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">1</text>
+</g>
+<g transform="translate(162,22)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">2</text>
+</g>
+<g transform="translate(232,39.5)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">3</text>
+</g>
+<g transform="translate(302,53.5)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">4</text>
+</g>
+<g transform="translate(22,165.5)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">5</text>
+</g>
+<g transform="translate(92,109.5)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">6</text>
+</g>
+<g transform="translate(162,92)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">7</text>
+</g>
+<g transform="translate(232,109.5)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">8</text>
+</g>
+<g transform="translate(302,123.5)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">9</text>
+</g>
+<g transform="translate(22,235.5)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">10</text>
+</g>
+<g transform="translate(92,179.5)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">11</text>
+</g>
+<g transform="translate(162,162)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">12</text>
+</g>
+<g transform="translate(232,179.5)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">13</text>
+</g>
+<g transform="translate(302,193.5)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">14</text>
+</g>
+<g transform="translate(302,272.6) rotate(20,35,35)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">15</text>
+</g>
+<g transform="translate(367.8,296.54) rotate(20,35,34.99999999999997)">
+  <path class="key-shadow" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" transform="translate(0.5,1)"/>
+  <path class="key-body" d="M 6,2 L 64,2 Q 68,2 68,6 L 68,64 Q 68,68 64,68 L 6,68 Q 2,68 2,64 L 2,6 Q 2,2 6,2 Z" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="35" y="36" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="14" class="key-label">16</text>
+</g>
+<text x="235" y="413" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, sans-serif" font-size="11" class="footer">Built with Shield Wizard for ZMK</text>
+</svg>

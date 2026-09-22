@@ -1,0 +1,57 @@
+if SHIELD_MEOW_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "meow"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+  default 1
+
+config BT_MAX_CONN
+  default 6
+
+config BT_MAX_PAIRED
+  default 6
+
+# Bump this value needed for concurrent GATT discovery of splits
+config BT_L2CAP_TX_BUF_COUNT
+    default 10 if ZMK_SPLIT_ROLE_CENTRAL
+
+endif
+
+if SHIELD_MEOW_LEFT || SHIELD_MEOW_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
+
+if SHIELD_MEOW_DONGLE
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "meow"
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+  default 2
+
+config BT_MAX_CONN
+  default 7
+
+config BT_MAX_PAIRED
+  default 7
+
+# Bump this value needed for concurrent GATT discovery of splits
+config BT_L2CAP_TX_BUF_COUNT
+    default 15 if ZMK_SPLIT_ROLE_CENTRAL
+
+endif
