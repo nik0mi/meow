@@ -113,14 +113,14 @@
 
         BASE {
             bindings = <
-&kp Q      &kp W             &kp E                           &kp R                 &kp T
-&kp A      &hm_l LEFT_ALT S             &hm_l LEFT_GUI D                            &hm_l LEFT_CONTROL F                 &kp G
-&kp Z      &kp X  &kp C                &kp V  &kp B
-                                                                                   &l2 3 SPACE           &kp LEFT_SHIFT
-&kp P      &kp O             &kp I                           &kp U                 &kp Y
-&ht SQT SEMICOLON      &hm_r LEFT_ALT L             &hm_r LEFT_GUI K                           &hm_r LEFT_CONTROL J                 &kp H
-&ht RIGHT_BRACKET LEFT_BRACKET  &kp PERIOD        &kp COMMA  &l2 3 SPACE           &kp LEFT_SHIFT
-                                                                                   &kp BACKSPACE     &lt 4 ENTER
+&kp Q                           &kp W             &kp E             &kp R                 &kp T
+&kp A                           &hm_l LEFT_ALT S  &hm_l LEFT_GUI D  &hm_l LEFT_CONTROL F  &kp G
+&kp Z                           &kp X             &kp C             &kp V                 &kp B
+                                                                                          &l2 3 SPACE    &kp LEFT_SHIFT
+&kp P                           &kp O             &kp I             &kp U                 &kp Y
+&ht SQT SEMICOLON               &hm_r LEFT_ALT L  &hm_r LEFT_GUI K  &hm_r LEFT_CONTROL J  &kp H
+&ht RIGHT_BRACKET LEFT_BRACKET  &kp PERIOD        &kp COMMA         &kp M                 &kp N
+                                                                                          &kp BACKSPACE  &lt 4 ENTER
             >;
         };
 
@@ -132,7 +132,7 @@
                                                                               &kp H            &kp J
 &kp K           &kp L       &ht SQT SEMICOLON               &kp LEFT_CONTROL  &kp Z
 &kp X           &kp C       &hm_l LEFT_ALT V                &kp N             &kp M
-&kp COMMA       &kp PERIOD  &ht RIGHT_BRACKET LEFT_BRACKET  &kp M        &mo 2
+&kp COMMA       &kp PERIOD  &ht RIGHT_BRACKET LEFT_BRACKET  &kp M             &mo 2
                                                                               &ht TILDE GRAVE  &kp BACKSPACE
             >;
         };
