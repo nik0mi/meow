@@ -156,9 +156,9 @@
 &kp NUMBER_1           &kp NUMBER_2                  &kp NUMBER_3             &kp NUMBER_4     &kp NUMBER_5
 &kp NUMBER_6           &kp NUMBER_7                  &kp NUMBER_8             &kp NUMBER_9     &kp NUMBER_0
                                                                                                &kp EQUAL           &kp LEFT_PARENTHESIS
-&kp RIGHT_PARENTHESIS  &ht LESS_THAN LEFT_BRACE      &ht UNDERSCORE KP_MINUS  &kp NUMBER_0     &kp NUMBER_9
-&kp NUMBER_8           &kp NUMBER_7                  &kp NUMBER_6             &kp KP_PLUS      &kp LEFT_BRACKET
-&kp RIGHT_BRACKET      &ht GREATER_THAN RIGHT_BRACE  &ht QMARK FSLH           &trans           &trans
+&ht BACKSLASH PIPE  &ht LESS_THAN LEFT_BRACE      &ht UNDERSCORE KP_MINUS  &kp NUMBER_0     &kp NUMBER_9
+&ht UNDERSCORE KP_MINUS           &kp NUMBER_7                  &kp NUMBER_6             &kp KP_PLUS      &kp LEFT_BRACKET
+&ht QMARK FSLH     &ht GREATER_THAN RIGHT_BRACE  &ht QMARK FSLH           &trans           &trans
                                                                                                &trans              &trans
             >;
         };
