@@ -1,4 +1,0 @@
-name: meow-left-as-peripheral
-append:
-  EXTRA_CONF_FILE: meow-left-as-peripheral.conf
-  EXTRA_DTC_OVERLAY_FILE: meow-left-as-peripheral.overlay
