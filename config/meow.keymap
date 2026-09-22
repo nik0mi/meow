@@ -139,27 +139,27 @@
 
         GAME_SYM {
             bindings = <
-&trans  &trans  &trans  &kp NUMBER_1  &kp NUMBER_2
-&trans  &trans  &trans  &trans        &kp NUMBER_3
-&trans  &trans  &trans  &kp NUMBER_5  &kp NUMBER_4
-                                      &trans        &trans
-&trans  &kp F4  &kp F3  &kp F2        &kp F1
-&trans  &kp F8  &kp F7  &kp F6        &kp F5
-&trans  &kp F12  &kp F11  &kp F10        &kp F9
-                                      &trans        &trans
+&trans  &trans   &trans   &kp NUMBER_1  &kp NUMBER_2
+&trans  &trans   &trans   &trans        &kp NUMBER_3
+&trans  &trans   &trans   &kp NUMBER_5  &kp NUMBER_4
+                                        &trans        &trans
+&trans  &kp F4   &kp F3   &kp F2        &kp F1
+&trans  &kp F8   &kp F7   &kp F6        &kp F5
+&trans  &kp F12  &kp F11  &kp F10       &kp F9
+                                        &trans        &trans
             >;
         };
 
         SYM {
             bindings = <
-&kp EXCLAMATION        &kp AT_SIGN                   &kp HASH                 &kp DOLLAR       &kp PERCENT
-&kp NUMBER_1           &kp NUMBER_2                  &kp NUMBER_3             &kp NUMBER_4     &kp NUMBER_5
-&kp NUMBER_6           &kp NUMBER_7                  &kp NUMBER_8             &kp NUMBER_9     &kp NUMBER_0
-                                                                                               &kp EQUAL           &kp LEFT_PARENTHESIS
-&ht BACKSLASH PIPE  &ht TILDE GRAVE     &ht UNDERSCORE KP_MINUS  &kp NUMBER_0     &kp NUMBER_9
-&ht UNDERSCORE KP_MINUS           &ht LESS_THAN LEFT_BRACE                  &kp NUMBER_6             &kp KP_PLUS      &kp LEFT_BRACKET
-&ht QMARK FSLH     &ht GREATER_THAN RIGHT_BRACE  &ht QMARK FSLH           &trans           &trans
-                                                                                               &trans              &trans
+&kp EXCLAMATION          &kp AT_SIGN                   &kp HASH               &kp DOLLAR            &kp PERCENT
+&kp NUMBER_1             &kp NUMBER_2                  &kp NUMBER_3           &kp NUMBER_4          &kp NUMBER_5
+&kp NUMBER_6             &kp NUMBER_7                  &kp NUMBER_8           &kp NUMBER_9          &kp NUMBER_0
+                                                                                                    &trans        &trans
+&ht BACKSLASH PIPE       &ht TILDE GRAVE               &kp ASTERISK           &kp AMPERSAND         &kp CARET
+&ht UNDERSCORE KP_MINUS  &ht LESS_THAN LEFT_BRACE      &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp EQUAL
+&ht QMARK FSLH           &ht GREATER_THAN RIGHT_BRACE  &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &kp PLUS
+                                                                                                    &trans        &trans
             >;
         };
 
