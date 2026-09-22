@@ -139,13 +139,13 @@
 
         GAME_SYM {
             bindings = <
-&trans   &trans   &trans        &kp NUMBER_1  &kp NUMBER_2
-&kp F1   &kp F2   &kp F3        &kp F4        &trans
-&trans   &trans   &trans        &trans        &kp NUMBER_3
-                                              &kp F5        &kp F6
-&kp F7   &kp F8   &trans        &trans        &trans
-&trans   &kp N5   &kp NUMBER_4  &kp F9        &kp F10
-&kp F11  &kp F12  &trans        &none         &none
+&trans   &trans   &trans        &trans  &trans
+&trans  &trans   &trans        &trans        &trans
+&trans   &trans   &trans        &trans        &trans
+                                              &trans        &trans
+&trans   &trans  &trans        &trans        &trans
+&trans   &trans   &trans  &trans       &trans
+&trans  &kp trans &trans        &none         &none
                                               &none         &none
             >;
         };
