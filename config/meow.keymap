@@ -132,7 +132,7 @@
                                                                               &kp H            &kp J
 &kp K           &kp L       &ht SQT SEMICOLON               &kp LEFT_CONTROL  &kp Z
 &kp X           &kp C       &hm_l LEFT_ALT V                &kp N             &kp M
-&kp COMMA       &kp PERIOD  &ht RIGHT_BRACKET LEFT_BRACKET  &kp SPACE         &mo 2
+&kp COMMA       &kp PERIOD  &ht RIGHT_BRACKET LEFT_BRACKET  &kp M        &mo 2
                                                                               &ht TILDE GRAVE  &kp BACKSPACE
             >;
         };
