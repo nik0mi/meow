@@ -1,4 +1,6 @@
-CONFIG_ZMK_KEYBOARD_NAME
+if SHIELD_MEOW_LEFT || SHIELD_MEOW_RIGHT
+
+config ZMK_KEYBOARD_NAME
     default "meow"
 
 endif
