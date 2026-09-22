@@ -131,9 +131,9 @@
 &kp LEFT_CONTROL  &kp Z       &kp X                           &kp C  &kp B
                                                                      &kp SPACE        &mo 2
 &kp P             &kp O       &kp I                           &kp U  &kp Y
-&kp SEMICOLON     &kp L       &kp K                           &kp J  &kp H
-&kp COMMA         &kp PERIOD  &ht RIGHT_BRACKET LEFT_BRACKET  &kp M  &kp N
-                                                                     &ht TILDE GRAVE  &kp BACKSPACE
+&ht SQT SEMICOLON     &kp L       &kp K                           &kp J  &kp H
+&ht RIGHT_BRACKET LEFT_BRACKET         &kp PERIOD  &ht RIGHT_BRACKET LEFT_BRACKET  &kp M  &kp N
+                                                                     &kp BACKSPACE  &ht TILDE GRAVE
             >;
         };
 
