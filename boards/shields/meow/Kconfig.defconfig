@@ -1,38 +1,16 @@
-if SHIELD_MEOW_LEFT || SHIELD_MEOW_RIGHT
-
-config ZMK_KEYBOARD_NAME
-    default "meow"
-
-endif
-
-if SHIELD_MEOW_LEFT || SHIELD_MEOW_RIGHT
-
-config ZMK_SPLIT
-    default y
-
-endif
-
 if SHIELD_MEOW_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "meow"
 
-config ZMK_SPLIT
-    default y
-
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-  default 2
+endif
 
-config BT_MAX_CONN
-  default 7
+if SHIELD_MEOW_DONGLE || SHIELD_MEOW_LEFT || SHIELD_MEOW_RIGHT
 
-config BT_MAX_PAIRED
-  default 7
-
-config BT_L2CAP_TX_BUF_COUNT
-    default 15 if ZMK_SPLIT_ROLE_CENTRAL
+config ZMK_SPLIT
+    default y
 
 endif
