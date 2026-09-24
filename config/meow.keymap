@@ -72,38 +72,38 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 10>;
+            key-positions = <6 5>;
             layers = <0>;
             require-prior-idle-ms = <100>;
         };
 
         game_m {
             bindings = <&kp M>;
-            key-positions = <4 24>;
+            key-positions = <4 14>;
             layers = <1>;
         };
 
         game_g {
             bindings = <&kp G>;
-            key-positions = <14 4>;
+            key-positions = <4 9>;
             layers = <1>;
         };
 
         game_b {
             bindings = <&kp B>;
-            key-positions = <14 24>;
+            key-positions = <14 9>;
             layers = <1>;
         };
 
         gaming {
             bindings = <&tog 1>;
-            key-positions = <32 31>;
+            key-positions = <16 33>;
             layers = <0 1>;
         };
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <21 20>;
+            key-positions = <33 32>;
             layers = <0>;
         };
     };
@@ -113,55 +113,79 @@
 
         BASE {
             bindings = <
-&kp Q  &kp W             &kp E             &kp R                 &kp T           &kp Y        &kp U                 &kp I             &kp O             &kp P
-&kp A  &hm_l LEFT_ALT S  &hm_l LEFT_GUI D  &hm_l LEFT_CONTROL F  &kp G           &kp H        &hm_r LEFT_CONTROL J  &hm_r LEFT_GUI K  &hm_r LEFT_ALT L  &ht SQT SEMICOLON
-&kp Z  &kp X             &kp C             &kp V                 &kp B           &kp N        &kp M                 &kp COMMA         &kp PERIOD        &ht RIGHT_BRACKET LEFT_BRACKET
-                                           &l2 3 SPACE           &kp LEFT_SHIFT  &lt 4 ENTER  &kp BACKSPACE
+&kp Q                           &kp W             &kp E             &kp R                 &kp T
+&kp A                           &hm_l LEFT_ALT S  &hm_l LEFT_GUI D  &hm_l LEFT_CONTROL F  &kp G
+&kp Z                           &kp X             &kp C             &kp V                 &kp B
+                                                                                          &l2 3 SPACE    &kp LEFT_SHIFT
+&kp P                           &kp O             &kp I             &kp U                 &kp Y
+&ht SQT SEMICOLON               &hm_r LEFT_ALT L  &hm_r LEFT_GUI K  &hm_r LEFT_CONTROL J  &kp H
+&ht RIGHT_BRACKET LEFT_BRACKET  &kp PERIOD        &kp COMMA         &kp M                 &kp N
+                                                                                          &kp BACKSPACE  &lt 4 ENTER
             >;
         };
 
         GAME {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E      &kp R             &kp Y            &kp U          &kp I      &kp O       &kp P
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D      &kp F             &kp H            &kp J          &kp K      &kp L       &ht SQT SEMICOLON
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C      &hm_l LEFT_ALT V  &kp N            &kp M          &kp COMMA  &kp PERIOD  &ht RIGHT_BRACKET LEFT_BRACKET
-                                &kp SPACE  &mo 2             &ht TILDE GRAVE  &kp BACKSPACE
+&kp TAB                         &kp Q       &kp W                           &kp E  &kp R
+&kp LEFT_SHIFT                  &kp A       &kp S                           &kp D  &kp F
+&kp LEFT_CONTROL                &kp Z       &kp X                           &kp C  &kp B
+                                                                                   &kp SPACE      &mo 2
+&kp P                           &kp O       &kp I                           &kp U  &kp Y
+&ht SQT SEMICOLON               &kp L       &kp K                           &kp J  &kp H
+&ht RIGHT_BRACKET LEFT_BRACKET  &kp PERIOD  &ht RIGHT_BRACKET LEFT_BRACKET  &kp M  &kp N
+                                                                                   &kp BACKSPACE  &ht TILDE GRAVE
             >;
         };
 
         GAME_SYM {
             bindings = <
-&trans  &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp F1  &kp F2   &kp F3   &kp F4   &trans
-&trans  &trans  &trans  &trans        &kp NUMBER_3  &kp F5  &kp F6   &kp F7   &kp F8   &trans
-&trans  &trans  &trans  &kp N5        &kp NUMBER_4  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-                        &none         &none         &none   &none
+&trans  &trans   &trans   &kp NUMBER_1  &kp NUMBER_2
+&trans  &trans   &trans   &trans        &kp NUMBER_3
+&trans  &trans   &trans   &kp NUMBER_5  &kp NUMBER_4
+                                        &trans        &trans
+&trans  &kp F4   &kp F3   &kp F2        &kp F1
+&trans  &kp F8   &kp F7   &kp F6        &kp F5
+&trans  &kp F12  &kp F11  &kp F10       &kp F9
+                                        &trans        &trans
             >;
         };
 
         SYM {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &kp CARET    &kp AMPERSAND         &kp ASTERISK           &ht TILDE GRAVE               &ht BACKSLASH PIPE
-&kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp EQUAL    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &ht LESS_THAN LEFT_BRACE      &ht UNDERSCORE KP_MINUS
-&kp NUMBER_0     &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7  &kp NUMBER_6  &kp KP_PLUS  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &ht GREATER_THAN RIGHT_BRACE  &ht QMARK FSLH
-                                             &trans        &trans        &trans       &trans
+&kp EXCLAMATION          &kp AT_SIGN                   &kp HASH               &kp DOLLAR            &kp PERCENT
+&kp NUMBER_1             &kp NUMBER_2                  &kp NUMBER_3           &kp NUMBER_4          &kp NUMBER_5
+&kp NUMBER_6             &kp NUMBER_7                  &kp NUMBER_8           &kp NUMBER_9          &kp NUMBER_0
+                                                                                                    &trans        &trans
+&ht BACKSLASH PIPE       &ht TILDE GRAVE               &kp ASTERISK           &kp AMPERSAND         &kp CARET
+&ht UNDERSCORE KP_MINUS  &ht LESS_THAN LEFT_BRACE      &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp EQUAL
+&ht QMARK FSLH           &ht GREATER_THAN RIGHT_BRACE  &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &kp PLUS
+                                                                                                    &trans        &trans
             >;
         };
 
         SPECIAL {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &tog 5          &mmv MOVE_LEFT  &mmv MOVE_DOWN     &mmv MOVE_UP     &mmv MOVE_RIGHT  &mkp LCLK
-&kp F5  &kp F6   &kp F7   &kp F8   &msc SCRL_UP    &kp LEFT_ARROW  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &mkp RCLK
-&kp F9  &kp F10  &kp F11  &kp F12  &msc SCRL_DOWN  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &kp C_PLAY_PAUSE
-                          &trans   &trans          &trans          &trans
+&kp F1            &kp F2           &kp F3           &kp F4             &tog 5
+&kp F5            &kp F6           &kp F7           &kp F8             &msc SCRL_UP
+&kp F9            &kp F10          &kp F11          &kp F12            &msc SCRL_DOWN
+                                                                       &trans          &trans
+&mkp LCLK         &mmv MOVE_RIGHT  &mmv MOVE_UP     &mmv MOVE_DOWN     &mmv MOVE_LEFT
+&mkp RCLK         &kp RIGHT_ARROW  &kp UP_ARROW     &kp DOWN_ARROW     &kp LEFT_ARROW
+&kp C_PLAY_PAUSE  &kp C_NEXT       &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_PREVIOUS
+                                                                       &trans          &trans
             >;
         };
 
         OTHER {
             bindings = <
-&none           &none  &none  &none  &tog 5       &none        &none  &none  &none  &none
-&studio_unlock  &none  &none  &none  &bootloader  &bootloader  &none  &none  &none  &studio_unlock
-&none           &none  &none  &none  &none        &none        &none  &none  &none  &none
-                              &none  &none        &none        &none
+&none           &none  &none  &none  &tog 5
+&studio_unlock  &none  &none  &none  &bootloader
+&none           &none  &none  &none  &none
+                                     &none        &none
+&none           &none  &none  &none  &none
+&studio_unlock  &none  &none  &none  &bootloader
+&none           &none  &none  &none  &none
+                                     &none        &none
             >;
         };
     };
