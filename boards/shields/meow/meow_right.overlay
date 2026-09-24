@@ -1,25 +1,30 @@
 #include "meow.dtsi"
 
-&kscan0 {
-    input-gpios
-        = <&gpio0 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        ;
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-direct";
+        wakeup-source;
+
+        input-gpios
+            = <&gpio0 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            ;
+    };
 };
 
 &matrix_transform0 {

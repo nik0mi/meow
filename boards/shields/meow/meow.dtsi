@@ -6,11 +6,6 @@
         zmk,physical-layout = &physical_layout_meow;
     };
 
-    kscan0: kscan0 {
-        compatible = "zmk,kscan-gpio-direct";
-        wakeup-source;
-    };
-
     matrix_transform0: matrix_transform0 {
         compatible = "zmk,matrix-transform";
         columns = <17>;
