@@ -5,17 +5,17 @@
         compatible = "zmk,physical-layout";
         display-name = "meow";
         keys  //                     w   h    x    y     rot    rx    ry
-            = <&key_physical_attrs 100 100   -25  105       0   -25   105>
+            = <&key_physical_attrs 100 100   (-25)  105       0   (-25)   105>
             , <&key_physical_attrs 100 100    75   25       0    75    25>
             , <&key_physical_attrs 100 100   175    0       0   175     0>
             , <&key_physical_attrs 100 100   275   25       0   275    25>
             , <&key_physical_attrs 100 100   375   45       0   375    45>
-            , <&key_physical_attrs 100 100   -25  205       0   -25   205>
+            , <&key_physical_attrs 100 100   (-25)  205       0   (-25)   205>
             , <&key_physical_attrs 100 100    75  125       0    75   125>
             , <&key_physical_attrs 100 100   175  100       0   175   100>
             , <&key_physical_attrs 100 100   275  125       0   275   125>
             , <&key_physical_attrs 100 100   375  145       0   375   145>
-            , <&key_physical_attrs 100 100   -25  305       0   -25   305>
+            , <&key_physical_attrs 100 100   (-25)  305       0   (-25)   305>
             , <&key_physical_attrs 100 100    75  225       0    75   225>
             , <&key_physical_attrs 100 100   175  200       0   175   200>
             , <&key_physical_attrs 100 100   275  225       0   275   225>
@@ -37,8 +37,8 @@
             , <&key_physical_attrs 100 100   925  200       0   925   200>
             , <&key_physical_attrs 100 100   825  225       0   825   225>
             , <&key_physical_attrs 100 100   725  245       0   725   245>
-            , <&key_physical_attrs 100 100   725  358    -2000   775   408>
-            , <&key_physical_attrs 100 100   631  392    -2000   681   442>
+            , <&key_physical_attrs 100 100   725  358    (-2000)   775   408>
+            , <&key_physical_attrs 100 100   631  392    (-2000)   681   442>
             ;
     };
 };
