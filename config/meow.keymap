@@ -116,11 +116,11 @@
 &kp Q                           &kp W             &kp E             &kp R                 &kp T
 &kp A                           &hm_l LEFT_ALT S  &hm_l LEFT_GUI D  &hm_l LEFT_CONTROL F  &kp G
 &kp Z                           &kp X             &kp C             &kp V                 &kp B
-                                                                                          &l2 3 SPACE    &kp LEFT_SHIFT
+                                                                                          &l2 3 SPACE  &kp LEFT_SHIFT
 &kp P                           &kp O             &kp I             &kp U                 &kp Y
 &ht SQT SEMICOLON               &hm_r LEFT_ALT L  &hm_r LEFT_GUI K  &hm_r LEFT_CONTROL J  &kp H
 &ht RIGHT_BRACKET LEFT_BRACKET  &kp PERIOD        &kp COMMA         &kp M                 &kp N
-                                                                                          &lt 4 ENTER      &kp BACKSPACE
+                                                                                          &lt 4 ENTER  &kp BACKSPACE
             >;
         };
 
@@ -154,7 +154,7 @@
             bindings = <
 &kp EXCLAMATION          &kp AT_SIGN                   &kp HASH               &kp DOLLAR            &kp PERCENT
 &kp NUMBER_1             &kp NUMBER_2                  &kp NUMBER_3           &kp NUMBER_4          &kp NUMBER_5
-&kp NUMBER_6             &kp NUMBER_7                  &kp NUMBER_8           &kp NUMBER_9          &kp NUMBER_0
+&kp NUMBER_0             &kp NUMBER_9                  &kp NUMBER_8           &kp NUMBER_7          &kp NUMBER_6
                                                                                                     &trans        &trans
 &ht BACKSLASH PIPE       &ht TILDE GRAVE               &kp ASTERISK           &kp AMPERSAND         &kp CARET
 &ht UNDERSCORE KP_MINUS  &ht LESS_THAN LEFT_BRACE      &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp EQUAL
