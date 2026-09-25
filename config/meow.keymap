@@ -120,7 +120,7 @@
 &kp P                           &kp O             &kp I             &kp U                 &kp Y
 &ht SQT SEMICOLON               &hm_r LEFT_ALT L  &hm_r LEFT_GUI K  &hm_r LEFT_CONTROL J  &kp H
 &ht RIGHT_BRACKET LEFT_BRACKET  &kp PERIOD        &kp COMMA         &kp M                 &kp N
-                                                                                          &lt 4 ENTER  &kp BACKSPACE
+                                                                                          &kp BACKSPACE &lt 4 ENTER 
             >;
         };
 
