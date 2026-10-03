@@ -1,0 +1,306 @@
+meta:
+  engine: 4.1.0
+units:
+  kx: u
+  ky: u
+  px: kx + 2
+  py: ky + 2
+points:
+  zones:
+    matrix:
+      anchor.shift: [50,-100]
+      columns:
+        pinky:
+        ring.key.stagger: 0.8kx
+        middle.key.stagger: 0.25kx
+        index.key.stagger: -0.25kx
+        inner.key.stagger: -0.2kx
+      rows:
+        bottom.padding: kx
+        home.padding: kx
+        top.padding: kx
+    thumb:
+      anchor:
+        ref: matrix_index_bottom
+        shift: [1kx, -1.33ky]
+        rotate: -20
+      columns:
+        tucky.key.name: thumb_tucky
+        reachy.key.name: thumb_reachy
+outlines:
+  keys:
+    - what: rectangle
+      where: true
+      size: [18, 18]
+  cutouts:
+    - what: rectangle
+      where: true
+      size: [14,14]
+  _mcu:
+    - what: rectangle
+      where:
+        ref: matrix_inner_bottom
+        shift: [py, 7.265]
+      size: [17.78,33]
+  _holes:
+    - what: circle
+      where:
+        ref: matrix_pinky_top
+        shift: [0.5kx, -0.5ky]
+      radius: 2
+    - what: circle
+      where:
+        ref: matrix_pinky_bottom
+        shift: [0.5kx, 0.5ky]
+      radius: 2
+    - what: circle
+      where:
+        ref: matrix_index_top
+        shift: [0.5kx, -0.5ky]
+      radius: 2
+    - what: circle
+      where:
+        ref: matrix_index_bottom
+        shift: [0.5kx, -0.25ky]
+      radius: 2
+    - what: circle
+      where:
+        ref: thumb_tucky
+        shift: [0.5kx, -0.25ky]
+      radius: 2
+  board:
+    - what: path
+      fillet: 1
+      segments: 
+        - type: line
+          points:
+          - ref: thumb_reachy
+            shift: [0.5px,0.5py]
+          - ref: matrix_inner_home
+            shift: [1.5px,0.3py]
+          - ref: matrix_inner_home
+            shift: [0.5px,0.3py]
+          - ref: matrix_inner_top
+            shift: [0.5px,0.5py] 
+          - ref: matrix_inner_top
+            shift: [-0.5px+2,0.5py]
+          - ref: matrix_index_top
+            shift: [0.5px,0.5py]     
+          - ref: matrix_index_top
+            shift: [-0.5px+2,0.5py]
+          - ref: matrix_middle_top
+            shift: [0.5px,0.5py]   
+        - type: arc
+          points:
+          - ref: matrix_middle_top
+            shift: [-0.5px,0.5py]    
+          - ref: matrix_ring_top
+            shift: [-0.5px,0.5py]  
+        - type: line
+          points:
+          - ref: matrix_pinky_top
+            shift: [0.5px-2,0.5py] 
+          - ref: matrix_pinky_top
+            shift: [-0.5px,0.5py] 
+          - ref: matrix_pinky_bottom
+            shift: [-0.5px,-0.5py]
+        - type: arc
+          points:    
+          - ref: matrix_pinky_bottom
+            shift: [0.5px,-0.5py] 
+          - ref: thumb_reachy
+            shift: [0.5px,-0.5py]
+          
+
+  preview:
+    - what: outline
+      name: board
+    - what: outline
+      name: _mcu
+      operation: subtract
+    - what: outline
+      name: keys
+      operation: subtract
+    - what: outline
+      name: _holes
+      operation: stack
+    - what: outline
+      name: cutouts
+      operation: add
+  
+  _prnt:
+    - what: outline
+      name: board
+    - what: outline
+      name: cutouts
+      operation: subtract
+cases:
+  prnt:
+    - name: _prnt
+      extrude: 1
+pcbs:
+  meow:
+    outlines:
+      main:
+        outline: board
+    template: kicad8 
+    footprints:
+      keys:
+        what: ceoloide/switch_choc_v1_v2
+        where: true
+        params:
+          from: GND
+          to: "{{name}}"
+          reversible: true
+          include_keycap: true
+          include_plated_holes: true
+          include_corner_marks: true
+          switch_3dmodel_filename: ${KICAD6_3DMODEL_DIR}/switch.step
+          keycap_3dmodel_filename: ${KICAD6_3DMODEL_DIR}/keycap.step
+          keycap_3dmodel_xyz_offset: [0,0,5]
+          hotswap_3dmodel_filename: ${KICAD6_3DMODEL_DIR}/hotswap.step
+          hotswap_3dmodel_xyz_offset: [0,-6,-3]
+      connector:
+        what: ceoloide/battery_connector_jst_ph_2
+        where:
+          ref: matrix_pinky_bottom
+          shift: [11.8, 1.75]
+          rotate: 90
+        params:
+          reversible: true
+          battery_connector_3dmodel_xyz_offset: [-1,0,0]
+          battery_connector_3dmodel_filename: ${KICAD6_3DMODEL_DIR}/jst-ph.step
+      power_switch:
+        what: ceoloide/power_switch_smd_side
+        where:
+          ref: matrix_ring_top
+          shift: [-4,10.8]
+          rotate: 106.5
+        params:
+          reversible: true
+          invert_behavior: true
+          switch_3dmodel_xyz_rotation: [0,0,90]
+          switch_3dmodel_filename: ${KICAD6_3DMODEL_DIR}/power_switch.step
+      reset_switch:
+        what: ceoloide/reset_switch_smd_side
+        where:
+          ref: matrix_ring_top
+          shift: [6, 12]
+          rotate: 10
+        params:
+          reversible: true
+          reset_switch_3dmodel_filename: ${KICAD6_3DMODEL_DIR}/reset_switch.step
+      trrs:
+        what: ceoloide/trrs_pj320a
+        where:
+          ref: matrix_inner_bottom
+          shift: [31.3, -13.5]
+          rotate: -90
+        params:
+          reversible: true
+          symmetric: true
+          TP: VCC
+          R2: P0
+          SL: GND
+      mcu:
+        what: ceoloide/mcu_supermini_nrf52840
+        where:
+          - ref: matrix_inner_bottom
+            shift: [px, 7.54]
+        params:
+          reversible: true
+          reverse_mount: true
+
+          P21: matrix_inner_top
+          P21_label: P21
+          P20: matrix_index_top
+          P20_label: P20
+          P19: matrix_middle_top
+          P19_label: P19
+          P18: matrix_ring_top
+          P18_label: P18
+          P15: matrix_pinky_top
+          P15_label: P15
+
+          P14: matrix_inner_home
+          P14_label: P14
+          P16: matrix_index_home
+          P16_label: P16
+          P10: matrix_middle_home
+          P10_label: P10
+          P2: matrix_ring_home
+          P2_label: P2
+          P3: matrix_pinky_home
+          P3_label: P3
+
+          P1: matrix_inner_bottom
+          P1_label: P1
+          P4: matrix_index_bottom
+          P4_label: P4
+          P5: matrix_middle_bottom
+          P5_label: P5
+          P6: matrix_ring_bottom
+          P6_label: P6
+          P7: matrix_pinky_bottom
+          P7_label: P7
+
+          P8: thumb_tucky
+          P8_label: P8
+          P9: thumb_reachy
+          P9_label: P9
+
+      hole_1:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: matrix_pinky_top
+          shift: [0.5kx , -0.5ky]
+      hole_2:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: matrix_pinky_bottom
+          shift: [0.5kx , 0.5ky]
+      hole_3:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: matrix_index_top
+          shift: [0.5kx , -0.5ky]
+      hole_4:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: thumb_tucky
+          shift: [0.5kx , -0.25ky]
+      hole_5:
+        what: ceoloide/mounting_hole_plated
+        where:
+          ref: matrix_index_bottom
+          shift: [0.5kx , -0.25ky]
+      hole_1B:
+        what: ceoloide/mounting_hole_plated
+        params.side: 'B'
+        where:
+          ref: matrix_pinky_top
+          shift: [0.5kx , -0.5ky]
+      hole_2B:
+        what: ceoloide/mounting_hole_plated
+        params.side: 'B'
+        where:
+          ref: matrix_pinky_bottom
+          shift: [0.5kx , 0.5ky]
+      hole_3B:
+        what: ceoloide/mounting_hole_plated
+        params.side: 'B'
+        where:
+          ref: matrix_index_top
+          shift: [0.5kx , -0.5ky]
+      hole_4B:
+        what: ceoloide/mounting_hole_plated
+        params.side: 'B'
+        where:
+          ref: thumb_tucky
+          shift: [0.5kx , -0.25ky]
+      hole_5B:
+        what: ceoloide/mounting_hole_plated
+        params.side: 'B'
+        where:
+          ref: matrix_index_bottom
+          shift: [0.5kx , -0.25ky]
