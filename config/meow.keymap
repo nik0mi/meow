@@ -128,7 +128,7 @@
             bindings = <
 &kp TAB                         &kp Q       &kp W                           &kp E  &kp R
 &kp LEFT_SHIFT                  &kp A       &kp S                           &kp D  &kp F
-&kp LEFT_CONTROL                &kp Z       &kp X                           &kp C  &kp B
+&kp LEFT_CONTROL                &kp Z       &kp X                           &kp C  &kp V
                                                                                    &kp SPACE      &mo 2
 &kp P                           &kp O       &kp I                           &kp U  &kp Y
 &ht SQT SEMICOLON               &kp L       &kp K                           &kp J  &kp H
